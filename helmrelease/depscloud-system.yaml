@@ -1,0 +1,15 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: depscloud-system
+spec:
+  helmVersion: v3
+  releaseName: depscloud-system
+  chart:
+    git: https://github.com/depscloud/deploy.git
+    ref: main
+    path: charts/depscloud
+  
+
+
+
