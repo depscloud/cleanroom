@@ -1,0 +1,15 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: depscloud
+spec:
+  helmVersion: v3
+  releaseName: depscloud
+  chart:
+    repository: https://depscloud.github.io/deploy/charts
+    name: depscloud
+    version: 0.1.6
+  
+
+
+
